@@ -58,6 +58,7 @@ Echo %A% Creating New QoS Policies
 Powershell -Command "New-NetQosPolicy -Name 'Fortnite' -AppPathNameMatchCondition 'FortniteClient-Win64-Shipping.exe' -DscpAction 46 -Precedence 255 -NetworkProfile 'All'" >Nul 2>&1
 Powershell -Command "New-NetQosPolicy -Name 'Minecraft' -AppPathNameMatchCondition 'javaw.exe' -DscpAction 46 -Precedence 255 -NetworkProfile 'All'" >Nul 2>&1
 Powershell -Command "New-NetQosPolicy -Name 'CS2' -AppPathNameMatchCondition 'cs2.exe' -DscpAction 46 -Precedence 255 -NetworkProfile 'All'" >Nul 2>&1
+Powershell -Command "New-NetQosPolicy -Name 'Valorant' -AppPathNameMatchCondition 'riotclientservices.exe' -DscpAction 46 -Precedence 255 -NetworkProfile 'All'" >Nul 2>&1
 
 REM Refresh Network Settings
 Echo.
